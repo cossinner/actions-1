@@ -1,7 +1,6 @@
 name: Use Workflow
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
