@@ -12,6 +12,6 @@ jobs:
             echo "Let's see if it works"
     workflow:
       needs: job1
-      if: success() || failure() || cancelled()
+      if: ${{ !cancelled() }}
       uses: ./.github/workflows/generate-ascii.yaml
       secrets: inherit
